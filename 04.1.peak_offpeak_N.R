@@ -17,7 +17,7 @@ options(digits=2)
 loadfonts()
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 
-setwd("C:\\Users\\wkerr\\Dropbox\\OnTIME local\\papers\\equity_paper")
+setwd("C:\\Users\\comp_name\\Dropbox\\OnTIME local\\papers\\equity_paper")
 
 #load google metrics outputs
 s2 <- as.data.table(qs::qread("data\\cleaned_s2.qs"))
@@ -61,6 +61,3 @@ pop_out <- ggpubr::ggarrange(popMTT, popN, nrow=1,
 pop_out <- annotate_figure(pop_out, top="Geographic accessiblity to the nearest public CEmOC facility \n in 15 cities in Nigeria by wealth quintile of S2 cells – peak vs. off-peak")
 pop_out <- pop_out + bgcolor("white") + border("white")
 
-outdir <- "C:/Users/wkerr/Dropbox/OnTIME Consortium/Publications/Equity paper/Resubmission/figures/20231228/"
-ggsave(paste0(outdir, "Figure_2.png"), pop_out, 
-       width = 26, height = 15, unit="cm", device='tiff', dpi=300)
