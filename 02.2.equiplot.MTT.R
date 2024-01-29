@@ -17,7 +17,7 @@ options(digits=2)
 loadfonts()
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 
-setwd("C:\\Users\\wkerr\\Dropbox\\OnTIME local\\papers\\equity_paper")
+setwd("C:\\Users\\comp_name\\Dropbox\\OnTIME local\\papers\\equity_paper")
 
 #load google metrics outputs
 s2 <- as.data.table(qs::qread("data\\cleaned_s2.qs"))
@@ -92,7 +92,4 @@ equiplot_out <- annotate_figure(equiplot_out,
                 bottom = text_grob("MTT: Median travel time", , size=10, face="italic", hjust=-1.75))
 equiplot_out <- equiplot_out + bgcolor("white") + border("white")
 
-outdir <- "C:/Users/wkerr/Dropbox/OnTIME Consortium/Publications/Equity paper/Resubmission/figures/20231228/"
-ggsave(paste0(outdir, "Figure_1.png"), equiplot_out,
-       width = 21, height = 22, unit="cm", device='tiff', dpi=300)
 
