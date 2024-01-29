@@ -18,7 +18,7 @@ options(digits=2)
 loadfonts()
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 
-setwd("C:\\Users\\wkerr\\Dropbox\\OnTIME local\\papers\\equity_paper")
+setwd("C:\\Users\\comp_name\\Dropbox\\OnTIME local\\papers\\equity_paper")
 
 #load google metrics outputs
 s2 <- as.data.table(qs::qread("data\\cleaned_s2.qs"))
