@@ -17,7 +17,7 @@ options(digits=2)
 loadfonts()
 windowsFonts(`Segoe UI` = windowsFont('Segoe UI'))
 
-setwd("C:\\Users\\wkerr\\Dropbox\\OnTIME local\\papers\\equity_paper")
+setwd("C:\\Users\\comp_name\\Dropbox\\OnTIME local\\papers\\equity_paper")
 
 #s2 cell data is available from figshare (see ref 43)
 s2 <- as.data.table(s2.google)
